@@ -1,0 +1,584 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    color: #111;
+    font-weight:400;
+}
+.logoTitle {
+	display:none;
+}
+.bold {
+	font-weight:700;
+}
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+	padding-top:100px;
+}
+
+.cover-image{
+	width:100%;
+}
+
+.logo {
+	margin-top:10px;
+	position:relative;
+}
+
+.shadow {
+	-webkit-box-shadow: 0px 4px 18px -1px rgba(0,0,0,0.72);
+	   -moz-box-shadow: 0px 4px 18px -1px rgba(0,0,0,0.72);
+	        box-shadow: 0px 4px 18px -1px rgba(0,0,0,0.72);
+}
+
+.shadow-inset {
+	-webkit-box-shadow: inset 1px -6px 6px -4px rgba(0,0,0,0.50);
+	   -moz-box-shadow: inset 1px -6px 6px -4px rgba(0,0,0,0.50);
+	        box-shadow: inset 1px -6px 6px -4px rgba(0,0,0,0.50);
+}
+
+.googleMap{
+	width:100%;
+	height:580px;
+}
+
+h1,h2{
+	margin: 0;
+	line-height: 0px;
+	display: block;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	padding: 0;
+}
+
+h3 {
+	text-align:center;
+	font-size:1.7em;
+	color:#035285;
+	margin:10px 0;
+	padding:0;
+}
+
+h4 {
+	font-size:1.5em;
+	color:#035285;
+	margin:10px 0;
+	padding:0;
+}
+
+nav {
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:100px;
+	background:rgb(95, 96, 100);
+	text-align:center;
+	color:white;
+	z-index:45;
+}
+
+
+.videoPreview {
+	min-height:150px;
+	background-size:cover;
+	background-position:50% 50%;
+	min-height:150px;
+
+}
+.videoButtons {
+	position:absolute;
+	bottom:15px;
+	left:0;
+	right:0;
+}
+nav .icon{
+	display:inline-block;
+	height:16px;
+}
+
+nav a {
+	vertical-align: top;
+	display:inline-block;
+	line-height:100px;
+	color:white;
+	text-decoration: none;
+	font-size:1.1em;
+	width:11.5%;
+	position:relative;
+	
+}
+
+nav a.doublewide {
+	width:17.25%;
+}
+
+
+nav a span {
+	color:#FFF;
+}
+nav a:hover {
+	color:#EEE!important;
+}
+
+nav .border { 
+	position: fixed;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	width: 100%;
+	top: 4px;
+	height: 88px;	
+}
+
+.transition {
+	        transition:All 1s ease;
+	-webkit-transition:All 1s ease;
+	   -moz-transition:All 1s ease;
+	     -o-transition:All 1s ease;
+}
+
+.fullscreen{
+	opacity:0;
+	background:black;
+	z-index:100000;
+	text-align:center;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+.fullscreenVideoContainer {
+
+	background:black;
+	position:absolute;
+	top:40px;
+	  left:0px;
+	bottom:0px;
+	 right:0px;
+}
+
+.closeIcon {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:40px;
+	height:40px;
+	cursor:pointer;
+}
+.fullscreenVideo {
+
+	width:100%;
+	height:100%;
+}
+
+.photos-container {
+	position: relative;
+	overflow: auto;
+	z-index:1;
+	text-align:center;
+	margin:auto;
+}
+.photos-container li {
+	list-style: none;
+}
+.photos-container ul li {
+	float: left;
+	margin:0;
+	padding:0;
+ }
+
+ .photos-container ul {
+	margin:0;
+	padding:0;
+ }
+
+ .photos-container .dots {
+ 	padding:0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+
+ .photos-container .dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+	text-indent: -999em;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: .4;
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+}
+ .photos-container .dots li.active {
+	background: #fff;
+	opacity: 1;
+}
+.photos-container ul {
+	height:580px;
+}
+.cover-image {
+	width:100%;
+	height:580px;
+	background-size:cover;
+	background-position:50% 50%;
+}
+
+.seperator {
+	height:10px;
+	background:#fff;
+    position:relative;
+    z-index:40;
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+-moz-box-shadow:    0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+
+}
+
+
+.videos {
+	width:100%;
+	background:white;
+	background-image:url('../images/swirl_pattern2.png');
+}
+
+.videoSelection {
+	width:100%;
+	display:table;
+	border-collapse: separate;
+    border-spacing: 60px 60px;
+
+}
+.row {
+	width:100%;
+	display:table-row;
+	text-align:center;
+	vertical-align: middle;
+}
+.videoInfo{
+	padding:20px;
+	text-align:center;
+	margin-bottom: 75px;
+
+}
+.videoThumb .button {
+	font-size:0.8em!important;
+}
+
+.videoThumb {
+	position:relative;
+	text-align:center;
+	margin:20px;
+	width:25%;
+	background:white;
+	display:table-cell;
+	vertical-align: top;
+}
+
+.pagination {
+	width:50px!important;
+	cursor:pointer;
+}
+.pagination-title{
+	width:auto!important;
+}
+.videoSelection a {
+	color:#222;
+}
+
+.location{
+	position:relative;
+}
+.address {
+	position:absolute;
+	left:0;
+	top:160px;
+	z-index:1;
+	color:white;
+	background:#035285;
+	padding:20px 40px 20px 120px;
+}
+
+.words {
+	position:relative;
+	background:#111;
+	background-image:url('../images/swirl_pattern2.png');
+	padding: 50px 0;
+}
+.button {
+	padding:10px 15px;
+	margin: 10px 5px;
+	background:#035285;
+	color:white!important;
+	text-transform: uppercase;
+	text-decoration:none!important;
+	display:inline-block;
+	font-size:1.2em;
+	border:0;
+}
+.button.disabled{
+	background:#aeaeae;
+	cursor:default;
+}
+input {
+	padding:10px 15px;
+	margin: 10px 5px;
+	width:500px;
+	font-size:1.1em;
+}
+form{
+	margin: auto;
+	margin-top: 40px;
+	width: 540px;
+}
+form button {
+	text-align:center;
+}
+.about h3{
+	text-align:center;
+	margin:3px 0;
+}
+.nextEvent {
+	text-align:center;
+}
+.nextEvent p {
+	font-size:1.3em;
+	padding:0;
+	margin:0;
+}
+
+.about.words,.events {
+	background-image: url('../images/swirl_pattern2.png');
+
+	padding:80px 0;
+}
+
+.words .box {
+	position:relative;
+	margin:auto;
+	
+	z-index:1;
+	color:#111;
+	background:#FFF;
+	padding:20px 40px 20px 40px;
+	width:60%;
+	max-width:600px;
+}
+
+.spacer {
+	margin-top:50px!important;
+}
+
+
+
+.words .box p {
+	color:#222;
+}
+
+.words .box a{
+	color:#035285;
+}
+
+.words .box .border{
+	position:absolute;
+	border: 2px solid #111;
+	top:3px;
+	right:3px;
+	bottom:3px;
+	left:3px;
+
+}
+
+
+.address .border {
+	position:absolute;
+	border: 2px solid white;
+	border-left:0;
+	top:3px;
+	right:3px;
+	bottom:3px;
+	left:0px;
+}
+
+.address p {
+	color:white;
+}
+
+.signup {
+	background-image: url('http://images.amplience.com/i/playground/IMG_20140713_163353762/nedev-tech-meetup.jpg')!important;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.center{
+	text-align:center;
+}
+.clear {
+	clear:both;
+}
+
+@media (min-width : 1024px) {
+	.googleMap{
+		height:700px;
+	}
+	.cover-image {
+		width:100%;
+		height:700px;
+
+	}
+	.photos-container ul {
+		height:700px;
+	}
+	.about.words,.events {
+		padding: 130px 0!important;
+	}
+	.videos{
+		/*padding: 100px 0!important;*/
+	}
+
+	.address{
+		top: 220px;
+	}
+}
+
+
+@media (min-width : 1400px) {
+	.googleMap{
+		height:800px;
+	}
+	.cover-image {
+		width:100%;
+		height:800px;
+
+	}
+	.photos-container ul {
+		height:800px;
+	}
+	.about.words, .events{
+		padding: 160px 0!important;
+	}
+	.videos{
+		/*padding: 130px 0!important;*/
+	}
+	.videoThumb .button {
+		font-size:1.2em!important;
+	}
+	.address{
+		top: 280px;
+	}
+	.videoPreview{
+		min-height:250px;
+	}
+}
+
+@media (max-width : 1124px) {
+	.videoSelection{
+		border-spacing: 10px 30px;
+	}
+	.videoInfo{
+		padding:5px;
+	}
+	.videoInfo h3{
+		font-size:1.3em;
+	}
+
+	.videos{
+		/*padding: 100px 0;*/
+	}
+
+}
+
+
+@media (max-width : 900px) {
+	.icon{
+		display:none!important;
+	}
+	input {
+		width:250px!important;
+	}
+	form {
+		width: 300px!important;
+	}
+}
+@media (max-width : 800px) {
+	nav{
+		height:50px;
+	}
+	nav .border{
+		height:38px
+	}
+	body {
+		padding-top:50px;
+	}
+	.icon{
+		display:none!important;
+	}
+	nav a {
+		font-size:0.9em;
+		line-height: 50px;
+	}
+	.logo {
+		width:100px;
+		margin-top: 22px;
+	}
+	.address {
+		padding:10px!important;
+	}
+
+	.row{
+		display: inline;
+	}
+	.videoThumb{
+		display:block;
+		width:80%;
+		margin: 30px auto;
+	}
+	.videoInfo {
+		margin-bottom:0;
+	}
+	.videoButtons {
+		position: relative;
+	}
+}
+
+@media (max-width: 400px) {
+	nav a {
+		width: 20%!important;
+		/* font-size: 0.4em; */
+		line-height: 50px;
+		float:left;
+	}
+	nav a .icon {
+		display:inline!important;
+	}
+	nav a span {
+		display:none!important;
+	}
+	.logo {
+		display:none!important;
+	}
+	.box {
+		padding: 10px 20px!important;
+		width: 80%!important;
+	}
+
+	.logoTitle {
+		display:block;
+		margin:0px auto 50px auto;
+	}
+}
+
+hr {
+	width:80%;
+	border:0;
+	margin:30px auto;
+	height:1px;
+	background:#aeaeae;
+}
+
